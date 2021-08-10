@@ -3,7 +3,6 @@ import { ApiTags, ApiParam, ApiHeader, ApiResponse } from '@nestjs/swagger';
 import { AccessTokenService } from './accessToken.service'
 import { Log4jsLoggerService } from '../logs/logs';
 import { config } from '../config/config'
-console.log(config)
 @Controller('auth')
 @ApiTags('access-token')
 export class AccessTokenController {
