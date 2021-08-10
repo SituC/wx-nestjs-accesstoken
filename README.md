@@ -26,6 +26,22 @@
 
 微信获取accesstoken中控服务
 
+## Config
+微信应用appId和appSecret属于敏感数据
+需要您在根目录创建`.env.development`和`.env.production`文件，然后将环境变量写进文件中
+本项目未上传配置文件
+```.env.development
+# 环境变量
+NODE_ENV = development
+APP_HOST = http://localhost
+APP_PORT = 3000
+WX_APP_ID = your_app_id
+WX_APP_SECRET = your_app_secret
+# redis
+REDIS_HOST = 127.0.0.1
+REDIS_PORT = 6379
+```
+同理生产环境配置`.env.production`
 ## Installation
 
 ```bash
